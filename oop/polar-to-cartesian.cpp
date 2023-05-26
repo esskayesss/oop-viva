@@ -7,7 +7,7 @@ using namespace std;
 
 template<typename T, typename U>
 pair<T, U> operator+(pair<T, U> l, pair<T, U> r){
-    return {l.first + r.first, l.second + r.second};
+    return pair<T,U>(l.first + r.first, l.second + r.second);
 }
 
 class Polar {
